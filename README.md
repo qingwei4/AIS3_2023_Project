@@ -15,8 +15,12 @@ Slides : [AIS3_2023_S6.pdf](https://github.com/qingwei4/AIS3_2023_Project/blob/m
 MiniWeb binary : [miniweb.exe](https://github.com/qingwei4/AIS3_2023_Project/blob/main/miniweb.exe)\
 IDA database : [miniweb.idb](https://github.com/qingwei4/AIS3_2023_Project/blob/main/miniweb.idb)\
 PoC : [poc.py](https://github.com/qingwei4/AIS3_2023_Project/blob/main/poc.py)\
-fuzzing script : [fuzz.py](https://github.com/qingwei4/AIS3_2023_Project/blob/main/fuzz.py)\
+fuzzing script : [fuzz.py](https://github.com/qingwei4/AIS3_2023_Project/blob/main/fuzz.py)
 
 ## Introduction
 
 We use boofuzz to fuzz Miniweb, which is a HTTP server. After running the fuzzing script for a while, Miniweb crashes. We check the payload, reversed the binary, traced the source code, then found a heap overflow in _mwProcessReadSocket(). After searching some datas, we guess the reason why MiniWeb crashes is CVE-2020-29596. Since MiniWeb is no longer maintained, we make a PR to fix the bug.
+
+## murmur
+其他組員都不會 rev/pwn，我負責了所有的技術工作
+頭好痛 QQ
