@@ -1,4 +1,4 @@
-# AIS3 2023 Project : Fuzzing N-day in MiniWeb HTTP Server 
+# AIS3 2023 Project : Fuzzing N-days in MiniWeb HTTP Server 
 
 ## Author
 - 組別 : 軟體安全第六組
